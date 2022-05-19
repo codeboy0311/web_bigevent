@@ -2,7 +2,7 @@ $(function(){
     getUserInfo()
     // 点击按钮实现推出的行为
     const layer = layui.layer
-    $('.layui-nav-item').on('click',function(){
+    $('#exit').on('click',function(){
         layer.confirm('确定退出登录?', {icon: 3, title:'提示'}, function(index){
             // 第一件要清空本地存储中的 token
             localStorage.removeItem('token')
